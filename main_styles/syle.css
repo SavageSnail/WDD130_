@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px;
+    height: 0em;
+    margin-top: 4em;
+    justify-content: center;
+    text-align: center;
+}
+
+
+h1 {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+}
+
+nav a {
+    color: aliceblue;
+    background-color: #6e8f88;
+    padding: 50px;
+}
+
+nav a :hover {
+    color: bisque;
+}
