@@ -83,15 +83,19 @@ h1, h2 {
     font-family: "Cinzel", 'Times New Roman', Times, serif;
 }
 
+h1 {
+    text-decoration: underline;
+}
+
 p {
-    font-size: 20px;
+    font-size: .8em;
 }
 
 .home-grid {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr, 1fr, 1fr;
-    grid-template-rows: 80px, 1fr, 1fr, 1fr;
+    grid-template-rows: 10%, repeat(3, 1fr);
 }
 
 .garden, .mesa, .rocky {
@@ -155,7 +159,125 @@ p {
     align-self: end;
 }
 
+.ski-grid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 80px, 1fr, 1fr;
+}
 
+.ski-title{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: center;
+}
+
+.breckenridge, .steamboat {
+    max-width: 90%;
+    grid-column: 3/4;
+    margin: 5%;
+}
+
+.breckenridge {
+    grid-row: 2/3;
+}
+
+.steamboat {
+    grid-row: 3/4;
+}
+
+.breckh {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    align-self: start;
+}
+
+.breckp {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    align-self: end;
+}
+
+.steamh {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    align-self: start;
+}
+
+.steamp {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    align-self: end;
+}
+
+.indoor-grid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 10%, repeat(3, 1fr);
+}
+
+.indoor-title {
+    align-self: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.museum, .stanley, .cave {
+    max-width: 90%;
+    grid-column: 1/2;
+    margin: 5%;
+}
+
+.museum {
+    grid-row: 2/3;
+}
+
+.stanley {
+    grid-row:
+    3/4;
+}
+
+.cave {
+    grid-row:
+    4/5
+}
+
+.museumh {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    align-self: start;
+}
+
+.museump {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    align-self: end;
+}
+
+.stanleyh {
+    grid-row: 3/4;
+    grid-column: 2/4;
+    align-self: start;
+}
+
+.stanleyp {
+    grid-row: 3/4;
+    grid-column: 2/4;
+    align-self: end;
+}
+
+.caveh {
+    grid-row: 4/5;
+    grid-column: 2/4;
+    align-self: start;
+}
+
+.cavep {
+    grid-row: 4/5;
+    grid-column: 2/4;
+    align-self: end;
+}
 
 footer{
     background-color: #52667f;
@@ -188,4 +310,47 @@ footer p a:hover{
 
 footer .social img {
     padding-top: 15px;
+}
+
+@media screen and (max-width: 900px) {
+
+    #logo-container {
+        top: -220px;
+    }
+
+    .logo {
+        height: 75px;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    h2 {
+        margin-top: -40px;
+    }
+
+    p {
+        margin-bottom: 40px;
+        padding-top: 15px;
+    }
+
+    h1 {
+        margin-top: -10px;
+        grid-column: 1/4;
+    }
+
+    .museumh {
+        margin-top: -15px;
+        font-size: 30px;
+    }
+
+    .museump {
+        padding-top: 40px;
+    }
+
+    nav {
+        font-size: 16px;
+    }
+
 }
