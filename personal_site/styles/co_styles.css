@@ -52,11 +52,6 @@ img:hover {
     margin-right: -40px;
 }
 
-.logo {
-    display: block;
-    height: 150px;
-    border:none;
-}
 
 .logo:hover {
     transform: scale(1);
@@ -75,6 +70,14 @@ img:hover {
     width: 100%;
     text-align: center;
     top: -400px;
+    background-color: rgba(94, 94, 94, 0.4);
+}
+
+
+.logo {
+    display: block;
+    height: 150px;
+    border:none;
 }
 
 nav {
